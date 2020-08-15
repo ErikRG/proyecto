@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    letter-spacing: 1px ;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 17px;
+}
+*::-webkit-scrollbar{
+    width:6px;
+}
+*::-webkit-scrollbar-thumb{
+    background: #3498DB;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow-x:hidden;    
+}
+body{
+}
+
+/* HEADER */
+header{
+    padding: 1% 3%;
+    background: white;
+}
+header #fecha{
+    user-select: none;
+    -ms-user-select:none;
+    -o-user-select:none;
+    -webkit-user-select:none;
+}

@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    letter-spacing: 1px ;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 17px;
+}
+*::-webkit-scrollbar{
+    width:6px;
+}
+*::-webkit-scrollbar-thumb{
+    background: #3498DB;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-image: url('../resources/mueble.jpg') !important;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* HEADER */
+header{
+    padding: 1% 3%;
+    background: white;
+}
+header #fecha{
+    user-select: none;
+    -ms-user-select:none;
+    -o-user-select:none;
+    -webkit-user-select:none;
+}
+header .barra-menu{
+    display: block;
+    width: 3%;
+}
+header .barra-menu i{
+    font-size: 35px;
+}
+/* BARRA DE MENÚ */
+.menu{
+    display: none;
+    z-index: 2;
+    background: #000000;
+    padding: 2% 3% 1% 3%;
+    position:absolute !important;
+    width: 100%;
+}
+.menu .lista li{
+    border-left: 2px solid #1B9CFC;
+    list-style: none;
+    padding-bottom: 10px;
+}
+.menu .lista li i{
+    font-size: 1.2em;
+    color:#1B9CFC;
+}
+.menu .lista li a{
+    border-bottom: 3px solid rgba(0,0,0,.0);
+    margin-left: 20px; 
+    margin-right: 15px;
+    padding-bottom: 5px;
+    color:white;
+    transition: .2s;
+}
+.menu .lista li a:hover{
+    text-decoration: none;
+    border-bottom: 2px solid #1B9CFC;
+    color:#1B9CFC;
+    letter-spacing: 2px;
+}
+.menu .lista li #r5{
+    color:orange !important;
+}
+.menu .lista li #a5:hover {
+    text-decoration: none;
+    border-bottom: 2px solid orange !important;
+    color:orange !important;
+}
+
+
+.tbl{
+    background: rgba(0,0,0,.7);
+    margin: 3% auto 3% auto;
+    width: 40%;
+    padding: 3%;
+    border-top: 16px solid rgba(56, 103, 214,.8);
+}
+.tbl table{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color:#fff;
+}
+.tbl td{
+    padding-bottom: 1.1em;
+}
+.tbl input[type='email']{
+    text-transform: none !important;
+}
+.tbl input[type='text'],.tbl input[type='number'],.tbl input[type='email'],.tbl select {
+    text-transform: capitalize;
+    width:100%;
+    padding:1%;
+    outline: none;
+    padding-left:5%;
+    border-radius:2px;
+    border:1px solid gray;
+    background: rgba(255,255,255,.65);
+}
+.tbl table tr td label	{
+    user-select: none;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+    -o-user-select:none;
+    padding-right: 25px;
+}
+.tbl input[type=number]::-webkit-inner-spin-button, 
+.tbl input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance:none;
+    -o-appearance:none;
+}
+.tbl #send-pedido{
+    width: 100%;
+    padding: 8px;
+    color:#fff;
+    border: none;
+    background: rgba(56, 103, 214,.7);
+    outline: none;
+    font-size: 15px;
+    transition: .25s;
+}
+.tbl #send-pedido:hover{
+    cursor: pointer;
+    background: rgba(56, 103, 214,1);
+}
+/* FOOTER */
+footer{
+    background: #000000;
+    width: 100%;
+    padding: 1% 3%;
+}
+footer span{
+    color: #ffffff;
+}
+footer ul{
+    margin-top: 1%;
+}
+footer .social ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 14px;
+}
+footer .social ul li a i {
+    background: #ffffff;
+    color:transparent;
+    -webkit-background-clip: text !important;
+    font-size: 2em;
+    transition: .2s;
+}
+footer .social ul li a #insta:hover{
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+}
+footer .social ul li a #wsp:hover{
+    background: #25d366;
+}
+footer .social ul li a #fb:hover{
+    background: #3b5998;
+}
+footer .info p{
+    user-select: none;
+    -ms-user-select:none;
+    -o-user-select:none;
+    -webkit-user-select:none;
+    color:rgba(255,255,255,.4);
+}
+footer #up{
+    display: none;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    margin:0px 15px 15px 0px;
+    padding: .4em;
+    border-radius: 5px;
+    color:rgba(0,0,0,.8);
+    font-size: 2.2em;
+    background: rgba(255,255,255,.8);
+    cursor: pointer;
+}
+footer #up:hover{
+    color:#0984e3;
+}

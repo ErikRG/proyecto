@@ -1,0 +1,43 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24/11/2019, 07:29:54 PM
+    Author     : Vega
+*/
+
+html,body{
+    height: 100%;
+}
+*::-webkit-scrollbar{
+    width:6px;
+}
+*::-webkit-scrollbar-thumb{
+    background: #3498DB;
+}
+.chat{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    min-width: 250px;
+    
+}
+.chat li{
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #B3A9A9;
+}
+.chat li .chat-body p{
+    margin: 0;
+    color: #777777;
+    
+}
+.panel .slidedown .ghyphicon, chat.ghyphicon{
+    margin-right: 5px;
+}
+.panel-body{
+    overflow-y: scroll;
+    height:250px;
+}
